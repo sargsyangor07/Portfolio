@@ -1,0 +1,336 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header h2{
+    font-size: 27px;
+}
+@font-face{
+    font-family: goro;
+    src:url(../font/Raleway-Light.ttf)
+}body{
+    font-family: goro;
+    background-color: aliceblue;
+}
+.container,.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+header li,a{
+    text-decoration: none;
+    list-style-type: none;
+    display: inline-block;
+    margin-left: 15px;
+    font-size: 18px;
+    color: black;
+}
+.burgerMenu{
+    display: none;
+}
+.linesBurger .span{
+    display: flex;
+    width: 40px;
+    height: 2px;
+    background-color: black;
+    border: 1px solid;
+    margin-top: 10px;
+}
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#home,#portfolio,#about,#skills,#contact{
+    padding-top: 120px;
+}  
+  .box {
+    width: calc(50% - 40px);
+    background-color: #fff;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    animation: slideIn 1s forwards;
+    opacity: 0;
+}
+.box:hover {
+    transform: translateY(-5px);
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+}
+#portfolio img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.bottom-div {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color:transparent;
+    padding: 20px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.color1,.color2,.color3,.color4{
+    width: 50px;
+    height: 50px;
+    display: none;
+    border-radius: 50%;
+    background-color: rgb( 157, 56, 189);
+    margin-left: 6px;
+}
+.color2{
+    background-color:#FF9F00;
+}
+.color3{
+    background-color:rgb(76,175,80);
+}
+.color4{
+    background-color:rgb(227,59,72);
+}
+.bottom-div div i{
+    padding-left: 10px;
+    font-size: 35px;
+}
+.vizitka{
+    display: flex;
+    align-items: center;
+}
+i{
+    font-size: 25px;
+    color: blue;
+}
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+} 
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+::-webkit-scrollbar-corner {
+    background: #f1f1f1;
+}
+#about .container .left div{
+    width: 300px;
+    height: 150px;
+    border: 1px solid;
+    display: flex;
+    border-radius: 10px;
+}
+progress {
+    width: 200px;
+    height: 20px;
+    background-color: black!important;
+    border: none;
+    border-radius: 40px;
+    display: block;
+}
+progress::-webkit-progress-value {
+    background-color:rgb(149,163,137);
+    border-radius: 2px;
+    transition: width 0.5s ease-in-out;
+}
+progress::-moz-progress-bar {
+    background-color:aliceblue;
+    border-radius: 2px;
+    transition: width 0.5s ease-in-out;
+}
+label {
+    font-size: 22px;
+    font-family: goro;
+}
+input,textarea{
+    width: 250px;
+    height: 45px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    max-width: 350px;
+    margin-top: 10px;
+    padding: 10px;
+}
+input,textarea::placeholder{
+    font-size: 16px;
+}
+button{
+    width:160px;
+    height:45px;
+    border: none;
+    border-radius: 10px;
+    background-color: black;
+    font-size: 17px;
+    margin-top: 10px;
+    color: aliceblue;
+    cursor: pointer;
+    font-family: goro;
+}
+
+footer{
+    text-align: center;
+    padding-top: 30px;
+}
+footer p{
+    color: black;
+}
+input,textarea::placeholder{
+    font-family: goro;
+}
+.form-container {
+    max-width: 400px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.form-container h4 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #333333;
+    text-align: center;
+}
+.input-wrapper {
+    position: relative;
+}
+.input-wrapper input,
+.input-wrapper textarea {
+    width: 100%;
+    padding: 10px;
+    max-height: 150px;
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    transition: border-color 0.3s ease-out, box-shadow 0.3s ease-out, transform 0.3s ease-out;
+}
+.input-wrapper input:focus,
+.input-wrapper textarea:focus {
+    outline: none;
+    border-color: #85c7f2;
+    box-shadow: 0 0 5px rgba(133, 199, 242, 0.5);
+    transform: scale(1.02);
+}
+.input-wrapper .input-effect {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background-color: #85c7f2;
+    transform-origin: left;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-out;
+}
+.input-wrapper input:focus ~ .input-effect,
+.input-wrapper textarea:focus ~ .input-effect {
+    transform: scaleX(1);
+}
+.form-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.form-container button:hover {
+    background-color: #333333;
+}
+.list{
+    text-align: center;
+    display: none;
+}
+.list li,a{
+    margin-top: 10px;
+}
+@media (min-width:320px) and (max-width:480px){
+    header .right{
+        display: none;
+    }
+    .burgerMenu{
+        display: block;
+    }
+    .container{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .container div,h2,p,progress{
+        margin-top:5px;
+    }
+    .guyn{
+        width: 30px;
+        height: 30px;
+    }
+    .box{
+        width: 85%;
+    }
+    h2{
+        font-size: 18px;
+        text-align: center;
+    }
+    p{
+        text-align: center;
+    }
+    .nav{
+        justify-content: space-between;
+    }
+    i{
+        font-size: 20px;
+    }
+    .bottom-div{
+        padding: 5px;
+    }
+    /* 300-400% */
+}
+@media (min-width:481px) and (max-width:899px){
+    header .right{
+        display: none;
+    }
+    .burgerMenu{
+        display: block;
+    }
+    .container{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .container div,h2,p,progress{
+        margin-top:5px;
+    }
+    .guyn{
+        width: 30px;
+        height: 30px;
+    }
+    h2{
+        font-size: 18px;
+        text-align: center;
+    }
+    p{
+        text-align: center;
+    }
+    .bottom-div{
+        padding: 5px;
+    }
+    /* 175-300% */
+}
